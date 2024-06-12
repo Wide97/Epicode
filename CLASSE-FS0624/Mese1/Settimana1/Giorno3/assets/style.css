@@ -52,4 +52,7 @@ a{
 .hr{
     color:#C4F3F2;
 }
-
+.border{
+    border-bottom-style: solid;
+    border-bottom-color:#10A4D3;
+}
