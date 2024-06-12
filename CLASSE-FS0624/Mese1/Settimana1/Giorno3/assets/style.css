@@ -1,0 +1,49 @@
+body{
+    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.testo-navbar {
+    margin-top: 30px;
+    color: #004D4C;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #FDFBF1;
+    min-height: 90px;
+    border-top-color: #FFD877;
+    border-top-style:solid;
+    
+}
+.titolo{
+    margin-top: 80px;
+    font-size: 60px;
+    font-weight: 900;
+    color: #333333;
+}
+.p-main{
+    font-size: 30px;
+    text-align: center;
+}
+.p2{
+    font-size:30px;
+    color:#999999 ;
+}
+.video{
+    box-shadow: 4px 4px 4px;
+    border-radius: 5%;
+}
+.p3{
+    font-size: 30px;
+    color: #B5460F;
+    font-weight: bold;
+    border-left-style: solid;
+    border-left-color: #FFD877;
+}
+a{
+    color:#107777 ;
+}
+.hr{
+    color:#C4F3F2;
+}
+
