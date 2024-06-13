@@ -28,8 +28,17 @@ body{
     font-weight: bold;
     text-align: center;
 }
+.epicode{
+    margin-top: 20px;
+}
 nav ul li {
     display: block;
+}
+nav ul li::before{
+    content: "\21D2";
+}
+nav ul li::after{
+    content: "\21D0";
 }
 .nav{
     width:50%;
@@ -37,6 +46,7 @@ nav ul li {
     margin-top: 20px;
     padding-bottom: 20px;
     font-size: 1.5em;
+    text-align: center\21D0;
 }
 nav ul li a:visited, nav ul li a:visited, nav ul li a:link {
     text-decoration: none;
