@@ -1,15 +1,152 @@
-/* IMPOSTAZIONI GENERALI */
+* {
+    margin: 0;
+	box-sizing: border-box;
+	line-height: 1.2rem;
+	font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;	
+}
 
-/* HEADER */
+body{
+    background-image: url(../assets/img/sfondo.png);   
+   
+}
+.header{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    height:300px;
+    padding: 10px;
+    background:linear-gradient(#0099BB,#007788 );
+    color: white ;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px grey;
+    margin-top: 20px;
+}
+.header p{
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+nav ul li {
+    display: block;
+}
+.nav{
+    width:50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+nav ul li a:visited, nav ul li a:visited, nav ul li a:link {
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: aqua;
 
-/* MAIN */
-
-/* ELEMENTI NEL MAIN - ARTICLE */
-
-/* TABELLE */
-
-/* FORM */
-
-/* ELEMENTI NELL' ASIDE */
-
-/* FOOTER */
+}
+.main{
+    width: 80%;
+    margin: 0 auto;
+    padding:10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px grey;
+}
+.main article{
+    padding: 10px;
+    margin:10px;
+    display: inline-block;
+}
+.main h1 h2{
+    font-size: 2em;
+    
+}
+.main a{
+    color: #0099BB;
+}
+.titoli{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.mario p{
+    color: grey;
+}
+.viola{
+    color: #AA2072;
+}
+main ul li{
+    padding-left: 20px;
+}
+.contorno{
+    background:linear-gradient(white, grey);
+    border-radius: 15%;
+    border:solid 1px grey
+}
+.azzurro{
+    background-color: #3567E9;
+    color: white;
+    text-decoration: none;
+}
+.riga{
+    background-color:lightgrey ;
+}
+.table{
+    border-bottom:solid #3366CC;
+    margin-bottom: 10px;
+}
+.video{
+    border-radius: 15%;
+    margin-bottom: 10px;
+}
+.novita{
+    background-color:lightgrey ;
+    padding: 10px;
+}
+.novita h2{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.3em;
+}
+.novita p{
+    margin-bottom: 10px;
+}
+.novita input{
+    border-bottom: dotted lightgray;
+}
+.correlato{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.trio{
+    background-color: lightgray;
+    margin-bottom: 20px;
+    padding: 2%
+}
+.calendar{
+    text-align: end;
+    margin-top: 20px;
+}
+.footer{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background:linear-gradient(#005566,#224444 );
+    color: white ;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 5px grey;
+    margin-top: 20px;
+}
+.footer p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer{
+    text-align: center;
+}
+.footer a{
+    color: #AA2072;
+}
