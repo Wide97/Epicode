@@ -27,12 +27,16 @@ piu' avanti quel valore dovra' essere definito.
 */
 
 let myName = 'Marco';
+console.log(myName)
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let number1 = '12';
+let number2 = '20';
+let verify = number1 + number2;
+console.log('la somma da' + verify)
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
