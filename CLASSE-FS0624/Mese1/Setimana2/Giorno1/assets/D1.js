@@ -15,7 +15,7 @@ REGOLE
 Le stringhe sono definite tramite apici (' ' o " "); possono essere manipolate tramite metodi predefiniti.
 La seconda tipologia e' la numerica, che viene definita senza distinzione tra intero e decimale; il numero decimale viene indicato
 con il punto.
-La terza tipologia di data types e' la bboleana, che ammette solo due valori: TRUE o FALSE. E' importante perche' fa prendere 
+La terza tipologia di data types e' la booleana, che ammette solo due valori: TRUE o FALSE. E' importante perche' fa prendere 
 decisioni al codice tramite dei controlli condizionali (if, or ecc...).
 Il data type null determina un' assenza intenzionale di valore, tendenzialmente il suo scopo e' quello di svuotare una variabile.
 Infine esiste la tipologia "undefined", che determina l' assenza di valore in questo momento, ma non per sempre, dicendo cioe' che
