@@ -27,7 +27,7 @@ piu' avanti quel valore dovra' essere definito.
 */
 
 let myName = 'Marco';
-console.log(myName)
+console.log(myName);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
