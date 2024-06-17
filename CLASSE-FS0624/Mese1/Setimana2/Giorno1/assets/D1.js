@@ -33,10 +33,10 @@ console.log(myName)
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
-let number1 = '12';
-let number2 = '20';
-let verify = number1 + number2;
-console.log('la somma da' + verify)
+let num1 = 12;
+let num2 = 20;
+let risultato = num1 + num2;
+console.log( 'il risultato da: ' + risultato);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
