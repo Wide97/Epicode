@@ -42,14 +42,17 @@ console.log( 'il risultato da: ' + risultato);
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let x = '12';
+console.log(x);
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+myName = 'Widesott';
+console.log(myName);
+/*const myName = 'Mario'*/
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
