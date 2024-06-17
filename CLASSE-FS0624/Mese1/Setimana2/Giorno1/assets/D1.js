@@ -68,4 +68,22 @@ console.log('il risultato da:' + sottrazione);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let name1 = 'john';
+let name2 = 'John';
+let verify = name1 == name2;
+console.log('la verifica da:' + verify);
+let verify1 = name1 === name2;
+console.log('la verifica da:' + verify1);
+let verify2 = name1 != name2;
+console.log('la verifica da:' + verify2);
+
+let lowercasedName1 = name1.toLowerCase();
+let lowercasedName2 = name2.toLowerCase();
+console.log(lowercasedName2);
+let verify3 = lowercasedName1 == lowercasedName2;
+console.log('il risultato da:' + verify3);
+let verify4 = lowercasedName1 === lowercasedName2;
+console.log('il risultato da:' + verify4);
+let verify5 = lowercasedName1 != lowercasedName2;
+console.log('il risultato da:' + verify5);
+
