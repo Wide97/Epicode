@@ -159,7 +159,14 @@ if (numb % 2 === 0) {
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let val = 3
+if (val < 10 && val >= 5) {
+    console.log("Meno di 10");
+  } else if (val < 5) {
+    console.log("Meno di 5");
+  } else if(val >= 10) {
+    console.log("Uguale a 10 o maggiore");
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -171,25 +178,46 @@ const me = {
   skills: ['javascript', 'html', 'css'],
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const me1 = {
+  name: 'John',
+  lastName: 'Doe',
+  skills: ['javascript', 'html', 'css'],
+  city: 'Toronto',
+}
+console.log(me1)
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me1.lastName;
+
+console.log(me1)
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me1.skills.pop();
+
+console.log(me1)
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const me2={
+  a0: 1,
+  a1: 2,
+  a2:3,
+  a3:4
+  
+  
+
+
+}
+
+console.log(me2)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
