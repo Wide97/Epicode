@@ -63,7 +63,7 @@ if (num6 === 8 || num5 === 8 || num6 - num5 === 8 || num6 + num5 === 8 || num5 -
 
 let totalShoppingCart = 60;
 let spedictionCost = 10;
-let somma1 = spedictionCost + totalShoppingCart
+let somma1 = spedictionCost + totalShoppingCart;
 
 if (totalShoppingCart > 50) {
   console.log('Hai diritto alla spedizione gratuita!');
