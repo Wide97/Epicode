@@ -10,6 +10,12 @@ if (num2 > num1) {
   result = 'Il numero risulta maggiore';
   console.log('il numero risulta maggiore');
 }
+else if (num1 > num2) {
+  console.log('il risultato risulta minore')
+}
+else {
+  console.log('il risultato da lo stesso numero')
+}
 document.getElementById('first').innerText = result;
 
 /* ESERCIZIO 2
@@ -20,6 +26,8 @@ let num3 = 7;
 
 if (num3 !== 5) {
   console.log('Il risultato non da 5');
+} else {
+  console.log('uguale')
 }
 
 /* ESERCIZIO 3
@@ -30,6 +38,8 @@ const num4 = 20
 
 if (num4 % 5 === 0) {
   console.log('Il numero risulta divisivile per 5');
+} else {
+  console.log('il numero non risulta divisibile per 5')
 }
 
 /* ESERCIZIO 4
@@ -41,6 +51,8 @@ let num6 = 9;
 
 if (num6 || num5 === 8 || num6 - num5 === 8 || num6 + num5 === 8) {
   console.log('Il valore di uno di essi o sottrazione/addizione risulta 8');
+} else{
+  console.log('non risulta 8')
 }
 
 /* ESERCIZIO 5
@@ -161,12 +173,12 @@ if (numb % 2 === 0) {
 
 let val = 3
 if (val < 10 && val >= 5) {
-    console.log("Meno di 10");
-  } else if (val < 5) {
-    console.log("Meno di 5");
-  } else if(val >= 10) {
-    console.log("Uguale a 10 o maggiore");
-  }
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("Meno di 5");
+} else if (val >= 10) {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -206,13 +218,13 @@ console.log(me1)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const me2={
+const me2 = {
   a0: 1,
   a1: 2,
-  a2:3,
-  a3:4
-  
-  
+  a2: 3,
+  a3: 4
+
+
 
 
 }
