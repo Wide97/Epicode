@@ -49,7 +49,7 @@ if (num4 % 5 === 0) {
 let num5 = 8;
 let num6 = 9;
 
-if (num6 || num5 === 8 || num6 - num5 === 8 || num6 + num5 === 8) {
+if (num6 === 8 || num5 === 8 || num6 - num5 === 8 || num6 + num5 === 8) {
   console.log('Il valore di uno di essi o sottrazione/addizione risulta 8');
 } else{
   console.log('non risulta 8')
