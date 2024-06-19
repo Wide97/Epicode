@@ -219,18 +219,20 @@ console.log(me1)
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-const me2 = {
-  a0: 1,
-  a1: 2,
-  a2: 3,
-  a3: 4
+const me2 = []
 
+me2[0]= 1
+me2[1]= 2
+me2[2]= 3
+me2[3]= 4
+me2[4]= 5
+me2[5]= 6
+me2[6]= 7
+me2[7]= 8
+me2[8]= 9
+me2[9]= 10
+console.log(me2);
 
-
-
-}
-
-console.log(me2)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
