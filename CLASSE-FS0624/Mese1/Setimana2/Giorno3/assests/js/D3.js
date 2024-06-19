@@ -157,19 +157,19 @@ const eyeColor = {
 for (let i = 0; i < starWarsCharacters.length; i++){
 switch (starWarsCharacters[i].eye_color) {
   case 'blue':
-    eyeColor.blue.push(starWarsCharacters[i] + 'ha i capelli blu');
+    eyeColor.blue.push(starWarsCharacters[i]);
     break;
   case 'yellow':
-    eyeColor.yellow.push(starWarsCharacters[i] + 'ha i capelli yellow');
+    eyeColor.yellow.push(starWarsCharacters[i]);
     break;
   case ' brown':
-    eyeColor.brown.push(starWarsCharacters[i] + 'ha i capelli brown');
+    eyeColor.brown.push(starWarsCharacters[i]);
     break;
   case ' red':
-    eyeColor.red.push(starWarsCharacters[i] + 'ha i capelli red');
+    eyeColor.red.push(starWarsCharacters[i]);
     break;
-  default:
-    eyeColor["blue-gray"].push(starWarsCharacters[i] + 'ha i capelli bluegray');
+  case 'blue-gray':
+    eyeColor["blue-gray"].push(starWarsCharacters[i]);
     break;
   }}
 
