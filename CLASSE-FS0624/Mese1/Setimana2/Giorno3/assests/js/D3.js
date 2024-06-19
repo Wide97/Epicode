@@ -116,9 +116,9 @@ const charactersNames = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   charactersNames.push(starWarsCharacters[i].name);
-  }
+}
 
-  console.log(charactersNames);
+console.log(charactersNames);
 
 
 
@@ -126,10 +126,10 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
 */
 
-const femaleCharacters =[];
+const femaleCharacters = [];
 
-for (let i = 0; i < starWarsCharacters.length; i++){
-  if(starWarsCharacters[i].gender === 'female')
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  if (starWarsCharacters[i].gender === 'female')
     femaleCharacters.push(starWarsCharacters[i]);
 }
 
@@ -153,9 +153,39 @@ const eyeColor = {
   Ogni personaggio dovrà finire nell'array corrispondente al suo colore degli occhi (al valore della sua proprietà "eye_color").
 */
 
+
+/* switch (starWarsCharacters.eye_color) {
+  case starWarsCharacters.eye_color === 'blue':
+    eyeColor.push(starWarsCharacters[i] + 'ha i capelli blu');
+    break;
+  case starWarsCharacters.eye_color === 'yellow':
+    eyeColor.push(starWarsCharacters[i] + 'ha i capelli yelllow');
+    break;
+  case starWarsCharacters.eye_color === ' brown':
+    eyeColor.push(starWarsCharacters[i] + 'ha i capelli brown');
+    break;
+  case starWarsCharacters.eye_color === ' red':
+    eyeColor.push(starWarsCharacters[i] + 'ha i capelli red');
+    break;
+  default:
+    eyeColor.push(starWarsCharacters + 'ha i capelli bluegray');
+    break;
+}
+
+console.log(eyeColor)*/
+
 /* ESERCIZIO 6
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
+let crewMass= 0;
+let i=0;
+
+while (i < starWarsCharacters.length) {
+  crewMass += starWarsCharacters[i].mass;
+  i++;
+  
+  }
+  console.log(crewMass);
 
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
