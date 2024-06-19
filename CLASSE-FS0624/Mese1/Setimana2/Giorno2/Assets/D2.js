@@ -141,7 +141,7 @@ else if (b > a && b > c && a > c) {
 
 let numa = 5;
 
-if (typeof numa === "number") {
+if (typeof (numa) === "number") {
   console.log('da un numero')
 }
 else {
