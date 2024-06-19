@@ -105,6 +105,8 @@ const starWarsCharacters = [
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
 
+const charactersNames=[];
+
 /* ESERCIZIO 2
   Utilizzando un ciclo for, cicla l'array "starWarsCharacters".
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "charactersNames" creato precedentemente.
@@ -147,7 +149,7 @@ const starWarsCharacters = [
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
-  Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
+  Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione. //Due for uno dentro l' altro
 */
 
 /* --EXTRA-- ESERCIZIO 10
