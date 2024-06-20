@@ -2,7 +2,11 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function area(l1, l2){
+    return l1 * l2;
+}
+
+console.log(area(7, 9));
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -13,7 +17,7 @@
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 3
- Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
+ Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta (pari) tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
@@ -49,7 +53,7 @@
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
- La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
+ La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa. (capital case)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
