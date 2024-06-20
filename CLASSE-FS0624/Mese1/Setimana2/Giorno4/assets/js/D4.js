@@ -67,7 +67,7 @@ console.log(boundary(400));
 */
 
 function epify(str){
-    if (str.startsWith('EPICODE')){
+    if (str.indexOf('EPICODE') === 0){
         return str;
     } else{
         return 'EPICODE' + str;
