@@ -101,7 +101,10 @@ console.log(check3and7(31));
 */
 
 function reverseString(string){
-   return string.split ('').reverse().join('');
+   let inverso = string.split('');
+   inverso.reverse();
+   inverso=inverso.join('');
+   return inverso;
 }
 
 console.log(reverseString('EPICODE'));
