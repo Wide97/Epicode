@@ -111,17 +111,14 @@ console.log(reverseString('EPICODE'));
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa. (capital case)
 */
 
-let words= 'ciao, mi chiamo marco';
-let arrayWords = words.split(' ');
-console.log(arrayWords);
-
 function upperFirst(arrayWords){
-     return  arrayWords.charAt(0);
-    
-
+    let firstArrayWords = arrayWords.charAt(0).toUpperCase();
+    return  firstArrayWords;
+      
+      
     
 }
-console.log(upperFirst);
+console.log(upperFirst('ciao mi chiamo marco'));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
