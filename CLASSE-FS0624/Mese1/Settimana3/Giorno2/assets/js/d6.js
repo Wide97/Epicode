@@ -15,9 +15,9 @@ changeTitle();
  Scrivi una funzione per aggiungere al titolo della pagina una classe "myHeading"
 */
 
-const addClassToTitle = function () { 
-    title.classList.add('myHeading');
-}
+const addClassToTitle = function () {
+	title.classList.add('myHeading');
+};
 
 addClassToTitle();
 
@@ -27,12 +27,12 @@ addClassToTitle();
 
 
 
-const changePcontent = function () { 
-    const divp = document.querySelectorAll('div p'); 
-    divp.forEach((element, index) =>{
-        element.innerText = 'testo cambiato $'
-    })
-}
+const changePcontent = function () {
+	const pars = document.querySelectorAll('div p');
+	pars.forEach((element, index) => {
+		element.innerText = `testo cambiato ${index + 1}`;
+	});
+};
 
 changePcontent();
 
@@ -121,22 +121,160 @@ document.querySelector('#internalLink').addEventListener('click', function() {
  La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
 */
 
-const generateTable = function () { }
+const products = [
+	{
+		image: 'https://m.media-amazon.com/images/I/71IjKpXWaJL._AC_UL320_.jpg',
+		product: 'MSI Thin GF63 12UDX-293IT',
+		qty: 15,
+		price: '€ 849',
+	},
+	{
+		image: 'https://m.media-amazon.com/images/I/71Gc0XFzTuL._AC_UL320_.jpg',
+		product: 'Lenovo, pc portatile Notebook, i7 1255u',
+		qty: 12,
+		price: '€ 839',
+	},
+	{
+		image: 'https://m.media-amazon.com/images/I/61Pdb2wbgbL._AC_UL320_.jpg',
+		product: 'Samsung Galaxy Book3 Laptop',
+		qty: 21,
+		price: '€ 819',
+	},
+	{
+		image: 'https://m.media-amazon.com/images/I/81KCFGj7yFL._AC_UL320_.jpg',
+		product: 'Dell Inspiron 16 5645 Notebook 16"',
+		qty: 25,
+		price: '€ 749',
+	},
+	{
+		image: 'https://m.media-amazon.com/images/I/61Qx75Y5NDL._AC_UL320_.jpg',
+		product: 'HP Victus 15-fa1003sl Notebook',
+		qty: 14,
+		price: '€ 990',
+	},
+];
+const generateTable = function () {
+	// Elementi generali
+	const tableContainer = document.getElementById('tableArea');
+	const myTable = document.createElement('table');
+	const tableHead = document.createElement('thead');
+	const tableBody = document.createElement('tbody');
+
+	// Intestazione tabella
+	const headImage = document.createElement('th');
+	const headProduct = document.createElement('th');
+	const headQty = document.createElement('th');
+	const headPrice = document.createElement('th');
+	const headRow = document.createElement('tr');
+
+	headImage.innerText = 'IMMAGINE';
+	headProduct.innerText = 'NOME PRODOTTO';
+	headQty.innerText = 'QUANTITÀ';
+	headPrice.innerText = 'PREZZO';
+
+	headRow.appendChild(headImage);
+	headRow.appendChild(headProduct);
+	headRow.appendChild(headQty);
+	headRow.appendChild(headPrice);
+
+	tableHead.appendChild(headRow);
+
+	myTable.appendChild(tableHead);
+
+	// Contenuto tabella
+	for (let i = 0; i < products.length; i++) {
+		const newRow = document.createElement('tr');
+		const cellImage = document.createElement('td');
+		const cellProduct = document.createElement('td');
+		const cellQty = document.createElement('td');
+		const cellPrice = document.createElement('td');
+		const imgProd = document.createElement('img');
+
+		imgProd.setAttribute('src', products[i].image);
+		cellImage.appendChild(imgProd);
+		cellProduct.innerText = products[i].product;
+		cellQty.innerText = products[i].qty;
+		cellPrice.innerText = products[i].price;
+
+		newRow.appendChild(cellImage);
+		newRow.appendChild(cellProduct);
+		newRow.appendChild(cellQty);
+		newRow.appendChild(cellPrice);
+
+		tableBody.appendChild(newRow);
+	}
+
+	myTable.appendChild(tableBody);
+
+	tableContainer.appendChild(myTable);
+};
+
+generateTable();
+
 
 /* ESERCIZIO 12
  Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
 */
 
-const addRow = function () { }
+const newProduct = {
+	image: 'https://m.media-amazon.com/images/I/71NxKpg1NIL._AC_UL320_.jpg',
+	product: 'ASUS TUF Gaming F15',
+	qty: 9,
+	price: '€ 999',
+};
+
+const addRow = function (product) {
+	const tableContainer = document.getElementById('tableArea');
+	const myTable = document.querySelector('table');
+	const tableBody = document.querySelector('tbody');
+	const newRow = document.createElement('tr');
+	const cellImage = document.createElement('td');
+	const cellProduct = document.createElement('td');
+	const cellQty = document.createElement('td');
+	const cellPrice = document.createElement('td');
+	const imgProd = document.createElement('img');
+
+	imgProd.setAttribute('src', product.image);
+	cellImage.appendChild(imgProd);
+	cellProduct.innerText = product.product;
+	cellQty.innerText = product.qty;
+	cellPrice.innerText = product.price;
+
+	newRow.appendChild(cellImage);
+	newRow.appendChild(cellProduct);
+	newRow.appendChild(cellQty);
+	newRow.appendChild(cellPrice);
+
+	tableBody.appendChild(newRow);
+	myTable.appendChild(tableBody);
+	tableContainer.appendChild(myTable);
+};
+
+addRow(newProduct);
 
 /* ESERCIZIO 14
 Crea una funzione che nasconda le immagini della tabella quando eseguita
 */
 
-const hideAllImages = function () { }
+const hideAllImages = function () {
+	const images = document.querySelectorAll('img');
+	images.forEach(image => (image.style.display = 'none'));
+};
+
 
 /* EXTRA ESERCIZIO 15
 Crea una funzione che cambi il colore del h2 con id "changeMyColor" con un colore random ad ogni click ricevuto
 */
 
-const changeColorWithRandom = function () { }
+const changeColorWithRandom = function () {
+	const change = document.getElementById('changeMyColor');
+	change.addEventListener('click', function () {
+		const red = Math.floor(Math.random() * 256);
+		const green = Math.floor(Math.random() * 256);
+		const blue = Math.floor(Math.random() * 256);
+		const newColor = `rgb(${red}, ${green}, ${blue})`;
+		change.style.color = newColor;
+	});
+};
+
+changeColorWithRandom();
