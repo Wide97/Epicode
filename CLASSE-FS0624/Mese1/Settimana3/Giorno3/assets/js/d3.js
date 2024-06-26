@@ -13,8 +13,6 @@ btnInsert.addEventListener('click', function(e){
     barra();
     myList.reset();
     
-    //lineItem();
-    
 });
 
 function chekInput(){
@@ -53,9 +51,6 @@ function barra(){
     }
 };
 
-//pList.addEventListener('click', function(){
-    //pList.classList.add('underline');
-//})
 
 function deleteItem (item) {
     listItem.splice(item, 1);
