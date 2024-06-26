@@ -1,3 +1,8 @@
-html{
+html {
     background-color: blueviolet;
+}
+
+#myList{
+    margin-top: 400px;
+    text-align: center;
 }
