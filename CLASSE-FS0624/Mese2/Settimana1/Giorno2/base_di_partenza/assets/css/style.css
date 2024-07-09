@@ -151,6 +151,23 @@ h1 + p {
   .incapsule img{
     float: left;
   }
+  .block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 200px;
+  }
+  .container{
+    position: relative;
+    padding-top: 275px;
+  }
+  .underline {
+    position: absolute;
+    top:420px;
+    height: 15px;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -170,13 +187,25 @@ h1 + p {
   }
   .container {
     position: relative;
+    padding-top: 120px;
   }
   .imgLeft{
     float: left;
   }
   .underline{
     position: absolute;
-    top: 115px;
+    top: 230px;
+  }
+  .block{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 200px;
+  }
+  .clearfix {
+    padding-top: 70px;
   }
 }
 
@@ -192,7 +221,7 @@ h1 + p {
   }
   .underline{
     position: absolute;
-    top: 125px;
+    top: 260px;
     width: 500px;
   }
 }
@@ -206,13 +235,14 @@ h1 + p {
   }
   .container {
     position: relative;
+    padding-top: 20px;
   }
   .imgLeft{
     float: left;
   }
   .underline {
     position: absolute;
-    top: 60px;
+    top: 80px;
     left: 450px;
   }
 }
