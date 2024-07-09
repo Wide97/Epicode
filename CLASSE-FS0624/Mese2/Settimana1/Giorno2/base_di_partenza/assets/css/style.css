@@ -137,7 +137,7 @@ h1 + p {
   color: #a0a0a0;
 }
 
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 500px) {
   p,
   ul,
   ol {
@@ -147,6 +147,9 @@ h1 + p {
   h2 {
     font-size: 1.8rem;
     font-weight: 700;
+  }
+  .incapsule img{
+    float: left;
   }
 }
 
@@ -165,11 +168,32 @@ h1 + p {
     font-size: 1.4rem;
     font-weight: 700;
   }
+  .container {
+    position: relative;
+  }
+  .imgLeft{
+    float: left;
+  }
+  .underline{
+    position: absolute;
+    top: 115px;
+  }
 }
 
 @media screen and (min-width: 700px) {
   h1 {
     font-size: 3.6rem;
+  }
+  .container {
+    position: relative;
+  }
+  .imgLeft{
+    float: left;
+  }
+  .underline{
+    position: absolute;
+    top: 125px;
+    width: 500px;
   }
 }
 
@@ -179,6 +203,17 @@ h1 + p {
   }
   section {
     border-radius: 20px;
+  }
+  .container {
+    position: relative;
+  }
+  .imgLeft{
+    float: left;
+  }
+  .underline {
+    position: absolute;
+    top: 60px;
+    left: 450px;
   }
 }
 
