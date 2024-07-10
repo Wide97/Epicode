@@ -36,12 +36,23 @@
     }
     .article {
         padding-left: 20px;
+        flex: 1;
     }
     .article h2 {
        color:  #612406;
     }
     article p {
         color: #612406;
+    }
+    .article1 {
+        flex: 1; 
+        position: relative; 
+        overflow: hidden; 
+    }
+    .article1 img {
+        width: 100%; 
+        height: auto; 
+        display: block;
     }
 }
 
