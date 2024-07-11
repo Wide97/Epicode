@@ -1,18 +1,44 @@
-body {
-    margin: 0;
-    padding: 0;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
+
 .row {
     display: flex;
     width: 100%;
-
+    justify-content: center;
 }
+
 .post-it {
-    margin: 20px;
-    flex: 1;
+    flex: 0 0 20%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 20px;
+    margin:30px;
     text-align: center;
-    height: 250px;
+    background-color: #ffeb3b;
+    height:250px;
+    margin-top: 50px;
+}
+
+.post-it h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.post-it p {
+    margin: 0;
+    padding: 25px;
+}
+.post-it.rotate {
+    transform: rotate(-5deg); 
+}
+.post-it.rotatea {
+    transform: rotate(5deg);
 }
