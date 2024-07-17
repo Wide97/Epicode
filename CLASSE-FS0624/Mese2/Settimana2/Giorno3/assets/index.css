@@ -8,8 +8,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 30px;
-  background-color: antiquewhite;
+  background-color: #F5F5F7;
   border-bottom: 1px solid black;
 }
 nav img {
@@ -29,11 +28,25 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #F5F5F7;
 }
-.section1 button {
+.section1 p {
+  margin: 0 40px;
+}
+.section1 h1 {
+  font-weight: bold;
+}
+
+.button {
   padding: 10px;
   margin: 30px;
   color: blue;
-  background-color: lightblue;
   border: none;
+}
+.button:hover {
+  background-color: antiquewhite;
+}
+.button:focus {
+  font-size: 1.5rem;
+  background-color: aquamarine;
 }/*# sourceMappingURL=index.css.map */
