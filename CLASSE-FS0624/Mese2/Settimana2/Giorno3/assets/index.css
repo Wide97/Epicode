@@ -71,4 +71,14 @@ nav {
 }
 .title button:hover {
   opacity: 0.8;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 200px 50px;
+  padding: 10px;
+}
+section img {
+  width: 95%;
 }/*# sourceMappingURL=index.css.map */
