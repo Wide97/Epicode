@@ -127,5 +127,24 @@ form {
         margin-top: 30px;
     }
 }
+.sotto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 20%;
+        border-radius: 50%;
+    }
+    p{
+        font-size: 0.8rem;
+        padding-left: 3px;
+    }
+}
+.sot{
+    display: flex;
+    flex-direction: row;
+    align-items:start;
+}
 
 
