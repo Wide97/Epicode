@@ -13,6 +13,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: end;
     button {
         border: none;
         padding-right: 20px;
@@ -22,8 +23,30 @@ form {
     margin-left: 50px;
     svg{
         margin-right: 20px;
+        margin-right: 20px;
     }
     li{
         padding: 0 10px;
     }
+}
+@media screen and (max-width:1000px) {
+    ul li{
+        display: none;
+    }
+    .hidden{
+        margin-left: 30px;
+        display: block;
+    }
+    
+}
+@media screen and (min-width:1000px) {
+    .hidden {
+        display: none;
+    }
+}
+.hero {
+    background-color: #7153FA;
+}
+.title {
+    margin-left: 100px;
 }

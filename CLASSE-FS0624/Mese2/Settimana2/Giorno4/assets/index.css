@@ -13,6 +13,7 @@ form img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: end;
 }
 .d-flex button {
   border: none;
@@ -24,7 +25,30 @@ form img {
 }
 .container-fluid svg {
   margin-right: 20px;
+  margin-right: 20px;
 }
 .container-fluid li {
   padding: 0 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  ul li {
+    display: none;
+  }
+  .hidden {
+    margin-left: 30px;
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hidden {
+    display: none;
+  }
+}
+.hero {
+  background-color: #7153FA;
+}
+
+.title {
+  margin-left: 100px;
 }/*# sourceMappingURL=index.css.map */
