@@ -1,3 +1,15 @@
+
+class Pet {
+    constructor (_nomeAnimale, _nomePadrone, _specie, _razzaAnimale){
+        this.nomeAnimale = _nomeAnimale
+        this.nomePadrone = _nomePadrone
+        this.specie = _specie
+        this.razzaAnimale = _razzaAnimale
+
+    }
+}
+
+
 const PetList = [];
 
 document.getElementsByTagName('form')[0];
