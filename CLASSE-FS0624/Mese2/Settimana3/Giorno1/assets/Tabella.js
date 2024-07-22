@@ -16,6 +16,10 @@ class Pet {
 
     }
 }
+const a1 = new Pet ('kira', 'marco', 'cane', 'pastore tedesco')
+const a2 = new Pet ('Luigi', 'marco', 'gatto', 'siamese')
+
+console.log(a1.compareName(a2))
 
 
 const PetList = [];
