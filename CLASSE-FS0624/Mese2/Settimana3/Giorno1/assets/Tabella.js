@@ -7,6 +7,14 @@ class Pet {
         this.razzaAnimale = _razzaAnimale
 
     }
+    compareName (otherOwner){
+        if(this.nomePadrone === otherOwner._nomePadrone){
+            return true
+        } else {
+            return false
+        }
+
+    }
 }
 
 
