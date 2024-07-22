@@ -25,4 +25,12 @@ console.log(p1);
 const p2= new User('Andrea', 'Bastoni', 33, 'Rovereto')
 console.log(p2);
 
+const p3 = new User('Mattia', 'Geranio', 20, 'Milano')
+console.log(p3);
+
+const p4 = new User('Federico', 'Ercolessi', 25, 'Catania')
+console.log(p4);
+
 console.log (p1.compareAge(p2));
+console.log (p1.compareAge(p4));
+console.log (p3.compareAge(p1));
