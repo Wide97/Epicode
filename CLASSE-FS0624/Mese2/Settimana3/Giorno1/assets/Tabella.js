@@ -8,7 +8,7 @@ class Pet {
 
     }
     compareName (otherOwner){
-        if(this.nomePadrone === otherOwner._nomePadrone){
+        if(this.nomePadrone === otherOwner.nomePadrone){
             return true
         } else {
             return false
