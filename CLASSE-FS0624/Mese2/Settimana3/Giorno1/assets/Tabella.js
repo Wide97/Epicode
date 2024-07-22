@@ -43,7 +43,7 @@ document.addEventListener('submit', function(e){
 
     for (let i=0; i < PetList.length; i++) {
         const newLi = document.createElement('li')
-        newLi.innerText= PetList[i].nomeAnimale + ' ' + PetList[i].nomePadrone + ' ' + PetList[i].specie + ' della razza ' + PetList[i].razzaAnimale
+        newLi.innerText= PetList[i].nomeAnimale + ' di cui il proprietario è ' + PetList[i].nomePadrone + ' della specie ' + PetList[i].specie + ' di razza ' + PetList[i].razzaAnimale
         newLi.classList.add('list-group-item')
         unorderedList.appendChild(newLi)
     }
