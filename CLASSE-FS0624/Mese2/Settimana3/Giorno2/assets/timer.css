@@ -1,0 +1,14 @@
+#time-counter {
+    display: inline-block;
+    font-size: 24px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+    margin-left: 100px;
+}
+
+
+.scale-up {
+    transform: scale(2);
+}
