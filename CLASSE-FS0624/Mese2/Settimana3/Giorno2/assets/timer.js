@@ -13,7 +13,7 @@ function animateCounter() {
     
     setTimeout(() => {
         timerCount.classList.remove('scale-up');
-    }, 500); // Durata dell'animazione
+    }, 500); 
 }
 
 window.onload = function() {
