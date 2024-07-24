@@ -14,51 +14,52 @@ const getLibrary = function () {
             console.log(imgBooks)
             const titleBooks = arrayBooks.map(item => item.title)
             console.log(titleBooks)
+            const priceBooks = arrayBooks.map(item => item.price)
+            console.log(priceBooks)
             const cardContainer = document.getElementById('cardContainer');
 
-            imgBooks.forEach((url, index) => {
+                    
+         imgBooks.forEach((url, index) => {
+     
+            const cardCol = document.createElement('div');
+            cardCol.className = 'col-6 col-md-4 col-lg-3 m-3';
 
-                const cardCol = document.createElement('div');
-                cardCol.className = 'col-6 col-md-4 col-lg-3 m-3';
+            const card = document.createElement('div');
+            card.className = 'card';
 
-                const cardDiv = document.createElement('div');
-                cardDiv.className = 'card';
+            const img = document.createElement('img');
+            img.src = url;
+            img.alt = titleBooks[index];
+            card.appendChild(img);
 
-                const imgSpan = document.createElement('span');
-                imgSpan.className = 'd-block';
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
 
-                const imgElement = document.createElement('img');
-                imgElement.src = url;
-                imgElement.alt = 'Immagine';
-                imgElement.className = 'card-img-top';
+            const title = document.createElement('h5');
+            title.className = 'card-title';
+            title.textContent = titleBooks[index];
+            cardBody.appendChild(title);
 
-                imgSpan.appendChild(imgElement);
-                cardDiv.appendChild(imgSpan);
+            const price = document.createElement('p');
+            price.className = 'card-price';
+            price.textContent = `$${priceBooks[index].toFixed(2)}`;
+            cardBody.appendChild(price);
 
-                const cardBody = document.createElement('div');
-                cardBody.className = 'card-body';
-
-                const cardTitle = document.createElement('h5');
-                cardTitle.className = 'card-title text-center';
-                cardTitle.textContent = titleBooks[index];
-
-                const cardText = document.createElement('p');
-                cardText.className = 'card-text';
-                cardText.textContent = 'Some quick example text to build on the card title and make up the bulk of the card\'s content.';
-
-                const cardLink = document.createElement('a');
-                cardLink.href = '#';
-                cardLink.className = 'btn btn-primary';
-                cardLink.textContent = 'Go somewhere';
-
-                cardBody.appendChild(cardTitle);
-                cardBody.appendChild(cardText);
-                cardBody.appendChild(cardLink);
-
-                cardDiv.appendChild(cardBody);
-                cardCol.appendChild(cardDiv);
-                cardContainer.appendChild(cardCol);
+            const discardButton = document.createElement('button');
+            discardButton.className = 'btn btn-danger btn-discard';
+            discardButton.textContent = 'Scarta';
+            discardButton.addEventListener('click', () => {
+                cardCol.remove();
             });
+            cardBody.appendChild(discardButton);
+
+            card.appendChild(cardBody);
+
+            cardCol.appendChild(card);
+
+            cardContainer.appendChild(cardCol);
+        });
+
 
         })
         .catch((err) => {
